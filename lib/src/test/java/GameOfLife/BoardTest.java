@@ -3,6 +3,7 @@ package GameOfLife;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 public class BoardTest {
 
@@ -21,5 +22,11 @@ public class BoardTest {
     public void testColumnLengthAssignedCorrectly() {
         Board board = new Board(5, 6);
         assertEquals(board.columnLength, 6);
+    }
+
+    @Test
+    public void testBoardMatrixIsCreated() {
+        Board board = new Board(2, 3);
+        assertNotNull(board.board);
     }
 }
