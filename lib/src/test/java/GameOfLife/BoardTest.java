@@ -35,4 +35,10 @@ public class BoardTest {
         Board board = new Board(5, 6);
         assertEquals(board.board.length, 5);
     }
+
+    @Test
+    public void testBoardMatrixIsCreatedWithSpecifiedColumnLength() {
+        Board board = new Board(5, 6);
+        assertEquals(board.board[0].length, 6);
+    }
 }
