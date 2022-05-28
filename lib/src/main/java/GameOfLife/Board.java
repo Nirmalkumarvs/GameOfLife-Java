@@ -1,7 +1,9 @@
 package GameOfLife;
 
 public class Board {
-    public Board(int rowLength, int columnLength) {
+    public int rowLength;
 
+    public Board(int rowLength, int columnLength) {
+        this.rowLength = rowLength;
     }
 }
