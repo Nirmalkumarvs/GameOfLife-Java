@@ -29,4 +29,10 @@ public class BoardTest {
         Board board = new Board(2, 3);
         assertNotNull(board.board);
     }
+
+    @Test
+    public void testBoardMatrixIsCreatedWithSpecifiedRowLength() {
+        Board board = new Board(5, 6);
+        assertEquals(board.board.length, 5);
+    }
 }
