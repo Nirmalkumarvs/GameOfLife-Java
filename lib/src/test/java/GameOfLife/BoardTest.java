@@ -16,4 +16,10 @@ public class BoardTest {
         Board board = new Board(5, 1);
         assertEquals(board.rowLength, 5);
     }
+
+    @Test
+    public void testColumnLengthAssignedCorrectly() {
+        Board board = new Board(5, 6);
+        assertEquals(board.columnLength, 6);
+    }
 }

@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="GameOfLife.BoardTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-05-28T08:16:41" hostname="LENOVO" time="0.052">
+<testsuite name="GameOfLife.BoardTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2022-05-28T08:29:25" hostname="LENOVO" time="0.074">
   <properties/>
-  <testcase name="testBoardClassCanBeInitializedWithDimensions()" classname="GameOfLife.BoardTest" time="0.041"/>
-  <testcase name="testRowLengthIsAssignedCorrectly()" classname="GameOfLife.BoardTest" time="0.008"/>
+  <testcase name="testBoardClassCanBeInitializedWithDimensions()" classname="GameOfLife.BoardTest" time="0.05"/>
+  <testcase name="testRowLengthIsAssignedCorrectly()" classname="GameOfLife.BoardTest" time="0.014"/>
+  <testcase name="testColumnLengthAssignedCorrectly()" classname="GameOfLife.BoardTest" time="0.003"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
