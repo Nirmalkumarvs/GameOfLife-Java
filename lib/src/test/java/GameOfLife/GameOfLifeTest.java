@@ -110,9 +110,19 @@ public class GameOfLifeTest {
     @Test
     public void testMakeItAsActiveCellMethodWorks() {
         GameOfLife gameOfLife = new GameOfLife();
-
         Board board = new Board(5, 5);
         gameOfLife.makeItAsActiveCell(board, 1, 1);
         assertEquals(1, board.board[1][1]);
     }
+
+    @Test
+    public void testMakeItAsDeadCellMethodWorks() {
+        GameOfLife gameOfLife = new GameOfLife();
+        Board board = new Board(5, 5);
+        board.board[1][1] = 1;
+        gameOfLife.makeItAsDeadCell(board, 1, 1);
+        assertEquals(0, board.board[1][1]);
+    }
+
+
 }

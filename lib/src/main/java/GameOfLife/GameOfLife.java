@@ -4,6 +4,8 @@ public class GameOfLife {
     public int DIRECTIONS[][] = {{-1, 0}, {1, 0}, {0, -1}, {0, 1}, {-1, -1}, {-1, 1}, {1, -1}, {1, 1}};
     final int ACTIVE_CELL = 1;
 
+    final int DEAD_CELL = 0;
+
     public Boolean isActiveCell(Board board, int rowIndex, int columnIndex) {
         if (board.board[rowIndex][columnIndex] == ACTIVE_CELL)
             return true;
@@ -27,24 +29,27 @@ public class GameOfLife {
 
 
     public void playTheGame(Board board) {
-        int[][] nextGenerationBoard = new int[board.rowLength][board.columnLength];
-
+        Board nextGenerationBoard = new Board(board.rowLength, board.columnLength);
         for (int rowIndex = 0; rowIndex < board.rowLength; rowIndex++) {
             for (int columnIndex = 0; columnIndex < board.columnLength; columnIndex++) {
                 int activeNeighbourCellsCount = this.getActiveNeighbourCellsCount(board, rowIndex, columnIndex);
                 if (this.isActiveCell(board, rowIndex, columnIndex)) {
                     if (activeNeighbourCellsCount < 2 || activeNeighbourCellsCount > 3)
-                        nextGenerationBoard[rowIndex][columnIndex] = 0;
+                        makeItAsDeadCell(nextGenerationBoard, rowIndex, columnIndex);
+                    else
+                        makeItAsActiveCell(nextGenerationBoard, rowIndex, columnIndex);
                 } else {
                     if (activeNeighbourCellsCount == 3)
-                        nextGenerationBoard[rowIndex][columnIndex] = 1;
+                        makeItAsActiveCell(nextGenerationBoard, rowIndex, columnIndex);
+                    else
+                        makeItAsDeadCell(nextGenerationBoard, rowIndex, columnIndex);
                 }
             }
         }
 
         for (int rowIndex = 0; rowIndex < board.rowLength; rowIndex++) {
             for (int columnIndex = 0; columnIndex < board.columnLength; columnIndex++) {
-                board.board[rowIndex][columnIndex] = nextGenerationBoard[rowIndex][columnIndex];
+                board.board[rowIndex][columnIndex] = nextGenerationBoard.board[rowIndex][columnIndex];
             }
         }
     }
@@ -52,5 +57,8 @@ public class GameOfLife {
     public void makeItAsActiveCell(Board board, int rowIndex, int columnIndex) {
         board.board[rowIndex][columnIndex] = ACTIVE_CELL;
     }
-    
+
+    public void makeItAsDeadCell(Board board, int rowIndex, int columnIndex) {
+        board.board[rowIndex][columnIndex] = DEAD_CELL;
+    }
 }
