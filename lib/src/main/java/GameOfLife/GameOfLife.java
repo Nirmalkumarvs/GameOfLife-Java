@@ -33,8 +33,11 @@ public class GameOfLife {
             for (int columnIndex = 0; columnIndex < board.columnLength; columnIndex++) {
                 int activeNeighbourCellsCount = this.getActiveNeighbourCellsCount(board, rowIndex, columnIndex);
                 if (this.isActiveCell(board, rowIndex, columnIndex)) {
-                    if (activeNeighbourCellsCount<2 || activeNeighbourCellsCount > 3)
+                    if (activeNeighbourCellsCount < 2 || activeNeighbourCellsCount > 3)
                         nextGenerationBoard[rowIndex][columnIndex] = 0;
+                } else {
+                    if (activeNeighbourCellsCount == 3)
+                        nextGenerationBoard[rowIndex][columnIndex] = 1;
                 }
             }
         }
