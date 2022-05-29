@@ -124,5 +124,25 @@ public class GameOfLifeTest {
         assertEquals(0, board.board[1][1]);
     }
 
+    @Test
+    public void testGameOfLifeOperationWithStillLivesBlockPattern() {
+        GameOfLife gameOfLife = new GameOfLife();
+        Board boardObj1 = new Board(5, 5);
+        Board boardObj2 = new Board(5, 5);
+        boardObj1.board[1][1] = 1;
+        boardObj1.board[1][2] = 1;
+        boardObj1.board[2][1] = 1;
+        boardObj1.board[2][2] = 1;
 
+        boardObj2.board[1][1] = 1;
+        boardObj2.board[1][2] = 1;
+        boardObj2.board[2][1] = 1;
+        boardObj2.board[2][2] = 1;
+
+        for (int iteration = 1; iteration < 10; iteration++) {
+            gameOfLife.playTheGame(boardObj1);
+        }
+        assertArrayEquals(boardObj2.board, boardObj1.board);
+    }
+    
 }
