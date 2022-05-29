@@ -48,4 +48,9 @@ public class BoardTest {
         assertEquals(true, board.isValidIndex(4,5));
     }
 
+    @Test
+    public void testIsValidIndexMethodWorksWellForInValidIndex() {
+        Board board = new Board(5, 6);
+        assertEquals(false, board.isValidIndex(7,5));
+    }
 }
