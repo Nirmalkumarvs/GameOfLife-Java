@@ -48,4 +48,9 @@ public class GameOfLife {
             }
         }
     }
+
+    public void makeItAsActiveCell(Board board, int rowIndex, int columnIndex) {
+        board.board[rowIndex][columnIndex] = ACTIVE_CELL;
+    }
+    
 }

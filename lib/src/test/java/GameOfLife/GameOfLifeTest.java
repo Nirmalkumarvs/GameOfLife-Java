@@ -106,4 +106,13 @@ public class GameOfLifeTest {
 
         assertArrayEquals(boardObj2.board, boardObj1.board);
     }
+
+    @Test
+    public void testMakeItAsActiveCellMethodWorks() {
+        GameOfLife gameOfLife = new GameOfLife();
+
+        Board board = new Board(5, 5);
+        gameOfLife.makeItAsActiveCell(board, 1, 1);
+        assertEquals(1, board.board[1][1]);
+    }
 }
