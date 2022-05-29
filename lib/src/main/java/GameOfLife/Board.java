@@ -10,4 +10,5 @@ public class Board {
         this.columnLength = columnLength;
         this.board = new int[rowLength][columnLength];
     }
+
 }

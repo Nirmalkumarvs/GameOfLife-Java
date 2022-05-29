@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="GameOfLife.GameOfLifeTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-05-29T04:24:56" hostname="LENOVO" time="0.006">
+  <properties/>
+  <testcase name="testGameOfLifeClassCanBeInitialized()" classname="GameOfLife.GameOfLifeTest" time="0.006"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

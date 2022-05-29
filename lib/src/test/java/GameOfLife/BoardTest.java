@@ -41,4 +41,5 @@ public class BoardTest {
         Board board = new Board(5, 6);
         assertEquals(board.board[0].length, 6);
     }
+
 }
