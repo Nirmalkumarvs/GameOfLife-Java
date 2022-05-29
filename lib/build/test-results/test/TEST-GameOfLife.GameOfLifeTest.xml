@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="GameOfLife.GameOfLifeTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-05-29T04:46:17" hostname="LENOVO" time="0.014">
+<testsuite name="GameOfLife.GameOfLifeTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-05-29T05:01:05" hostname="LENOVO" time="0.025">
   <properties/>
-  <testcase name="testGameOfLifeClassCanBeInitialized()" classname="GameOfLife.GameOfLifeTest" time="0.004"/>
-  <testcase name="testDirectionsAttributeIsAvailable()" classname="GameOfLife.GameOfLifeTest" time="0.007"/>
+  <testcase name="testGameOfLifeClassCanBeInitialized()" classname="GameOfLife.GameOfLifeTest" time="0.016"/>
+  <testcase name="testDirectionsAttributeIsAvailable()" classname="GameOfLife.GameOfLifeTest" time="0.005"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

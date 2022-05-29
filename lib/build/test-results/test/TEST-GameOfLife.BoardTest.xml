@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="GameOfLife.BoardTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2022-05-29T04:46:17" hostname="LENOVO" time="0.115">
+<testsuite name="GameOfLife.BoardTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2022-05-29T05:01:04" hostname="LENOVO" time="0.108">
   <properties/>
-  <testcase name="testBoardClassCanBeInitializedWithDimensions()" classname="GameOfLife.BoardTest" time="0.069"/>
-  <testcase name="testRowLengthIsAssignedCorrectly()" classname="GameOfLife.BoardTest" time="0.009"/>
+  <testcase name="testBoardClassCanBeInitializedWithDimensions()" classname="GameOfLife.BoardTest" time="0.065"/>
+  <testcase name="testRowLengthIsAssignedCorrectly()" classname="GameOfLife.BoardTest" time="0.01"/>
+  <testcase name="testIsValidIndexMethodWorksWellForValidIndex()" classname="GameOfLife.BoardTest" time="0.006"/>
   <testcase name="testBoardMatrixIsCreatedWithSpecifiedRowLength()" classname="GameOfLife.BoardTest" time="0.003"/>
-  <testcase name="testBoardMatrixIsCreated()" classname="GameOfLife.BoardTest" time="0.004"/>
-  <testcase name="testBoardMatrixIsCreatedWithSpecifiedColumnLength()" classname="GameOfLife.BoardTest" time="0.005"/>
-  <testcase name="testColumnLengthAssignedCorrectly()" classname="GameOfLife.BoardTest" time="0.003"/>
+  <testcase name="testBoardMatrixIsCreated()" classname="GameOfLife.BoardTest" time="0.006"/>
+  <testcase name="testBoardMatrixIsCreatedWithSpecifiedColumnLength()" classname="GameOfLife.BoardTest" time="0.003"/>
+  <testcase name="testColumnLengthAssignedCorrectly()" classname="GameOfLife.BoardTest" time="0.002"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

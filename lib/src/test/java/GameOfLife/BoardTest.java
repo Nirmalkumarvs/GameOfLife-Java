@@ -42,4 +42,10 @@ public class BoardTest {
         assertEquals(board.board[0].length, 6);
     }
 
+    @Test
+    public void testIsValidIndexMethodWorksWellForValidIndex() {
+        Board board = new Board(5, 6);
+        assertEquals(true, board.isValidIndex(4,5));
+    }
+
 }

@@ -16,4 +16,5 @@ public class GameOfLifeTest {
         GameOfLife gameOfLife = new GameOfLife();
         assertNotNull(gameOfLife.DIRECTIONS);
     }
+
 }
