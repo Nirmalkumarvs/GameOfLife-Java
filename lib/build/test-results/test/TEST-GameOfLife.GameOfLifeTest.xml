@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="GameOfLife.GameOfLifeTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2022-05-29T06:09:03" hostname="LENOVO" time="0.032">
+<testsuite name="GameOfLife.GameOfLifeTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2022-05-29T07:03:36" hostname="LENOVO" time="0.041">
   <properties/>
-  <testcase name="testIsActiveCellMethodWorksWellForIndexWithoutActiveCell()" classname="GameOfLife.GameOfLifeTest" time="0.013"/>
-  <testcase name="testGetActiveNeighbourCellsCountMethodWorksWell()" classname="GameOfLife.GameOfLifeTest" time="0.001"/>
+  <testcase name="testPlayTheGameMethodExists()" classname="GameOfLife.GameOfLifeTest" time="0.005"/>
+  <testcase name="testIsActiveCellMethodWorksWellForIndexWithoutActiveCell()" classname="GameOfLife.GameOfLifeTest" time="0.004"/>
+  <testcase name="testGetActiveNeighbourCellsCountMethodWorksWell()" classname="GameOfLife.GameOfLifeTest" time="0.005"/>
   <testcase name="testGameOfLifeClassCanBeInitialized()" classname="GameOfLife.GameOfLifeTest" time="0.002"/>
-  <testcase name="testIsActiveCellMethodWorksWellForIndexWithActiveCell()" classname="GameOfLife.GameOfLifeTest" time="0.002"/>
+  <testcase name="testIsActiveCellMethodWorksWellForIndexWithActiveCell()" classname="GameOfLife.GameOfLifeTest" time="0.011"/>
   <testcase name="testDirectionsAttributeIsAvailable()" classname="GameOfLife.GameOfLifeTest" time="0.003"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

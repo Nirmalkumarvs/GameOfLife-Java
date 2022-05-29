@@ -40,6 +40,15 @@ public class GameOfLifeTest {
         board.board[0][0] = 1;
         board.board[0][1] = 1;
         board.board[0][2] = 1;
-        assertEquals(3, gameOfLife.getActiveNeighbourCellsCount(board,1,1));
+        assertEquals(3, gameOfLife.getActiveNeighbourCellsCount(board, 1, 1));
     }
+
+    @Test
+    public void testPlayTheGameMethodExists() {
+        GameOfLife gameOfLife = new GameOfLife();
+        Board board = new Board(3, 3);
+        gameOfLife.playTheGame(board);
+    }
+
+
 }

@@ -24,4 +24,9 @@ public class GameOfLife {
         }
         return activeNeighbourCellsCount;
     }
+
+
+    public void playTheGame(Board board) {
+
+    }
 }
