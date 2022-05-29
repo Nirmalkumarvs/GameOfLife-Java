@@ -31,15 +31,9 @@ public class GameOfLife {
 
         for (int rowIndex = 0; rowIndex < board.rowLength; rowIndex++) {
             for (int columnIndex = 0; columnIndex < board.columnLength; columnIndex++) {
-                nextGenerationBoard[rowIndex][columnIndex] = board.board[rowIndex][columnIndex];
-            }
-        }
-
-        for (int rowIndex = 0; rowIndex < board.rowLength; rowIndex++) {
-            for (int columnIndex = 0; columnIndex < board.columnLength; columnIndex++) {
                 int activeNeighbourCellsCount = this.getActiveNeighbourCellsCount(board, rowIndex, columnIndex);
                 if (this.isActiveCell(board, rowIndex, columnIndex)) {
-                    if (activeNeighbourCellsCount > 3)
+                    if (activeNeighbourCellsCount<2 || activeNeighbourCellsCount > 3)
                         nextGenerationBoard[rowIndex][columnIndex] = 0;
                 }
             }
