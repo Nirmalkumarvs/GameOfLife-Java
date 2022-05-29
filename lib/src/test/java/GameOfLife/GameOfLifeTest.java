@@ -25,4 +25,11 @@ public class GameOfLifeTest {
         assertEquals(false, gameOfLife.isActiveCell(board, 2, 2));
     }
 
+    @Test
+    public void testIsActiveCellMethodWorksWellForIndexWithActiveCell() {
+        GameOfLife gameOfLife = new GameOfLife();
+        Board board = new Board(5, 5);
+        board.board[2][2]=1;
+        assertEquals(true, gameOfLife.isActiveCell(board, 2, 2));
+    }
 }

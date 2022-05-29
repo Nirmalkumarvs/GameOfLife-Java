@@ -2,8 +2,12 @@ package GameOfLife;
 
 public class GameOfLife {
     public int DIRECTIONS[][] = {{-1, 0}, {1, 0}, {0, -1}, {0, 1}, {-1, -1}, {-1, 1}, {1, -1}, {1, 1}};
+    final int ACTIVE_CELL = 1;
 
     public Boolean isActiveCell(Board board, int rowIndex, int columnIndex) {
-        return false;
+        if (board.board[rowIndex][columnIndex] == ACTIVE_CELL)
+            return true;
+        else
+            return false;
     }
 }
