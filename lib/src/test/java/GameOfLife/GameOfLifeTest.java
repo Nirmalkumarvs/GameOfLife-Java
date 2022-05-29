@@ -50,6 +50,24 @@ public class GameOfLifeTest {
     }
 
     @Test
+    public void testActiveCellWithFourOrMoreActiveNeighborsDiesCondition() {
+        GameOfLife gameOfLife = new GameOfLife();
+
+        Board boardObj1 = new Board(5, 5);
+        Board boardObj2 = new Board(5, 5);
+
+        boardObj1.board[0][0] = 1;
+        boardObj1.board[0][2] = 1;
+        boardObj1.board[1][1] = 1;
+        boardObj1.board[2][0] = 1;
+        boardObj1.board[2][2] = 1;
+
+        gameOfLife.playTheGame(boardObj1);
+
+        assertArrayEquals(boardObj2.board, boardObj1.board);
+    }
+
+    @Test
     public void testActiveCellWithLessThanTwoActiveNeighborsDiesCondition() {
         GameOfLife gameOfLife = new GameOfLife();
 
