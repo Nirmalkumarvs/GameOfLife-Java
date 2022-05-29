@@ -29,7 +29,17 @@ public class GameOfLifeTest {
     public void testIsActiveCellMethodWorksWellForIndexWithActiveCell() {
         GameOfLife gameOfLife = new GameOfLife();
         Board board = new Board(5, 5);
-        board.board[2][2]=1;
+        board.board[2][2] = 1;
         assertEquals(true, gameOfLife.isActiveCell(board, 2, 2));
+    }
+
+    @Test
+    public void testGetActiveNeighbourCellsCountMethodWorksWell() {
+        GameOfLife gameOfLife = new GameOfLife();
+        Board board = new Board(3, 3);
+        board.board[0][0] = 1;
+        board.board[0][1] = 1;
+        board.board[0][2] = 1;
+        assertEquals(3, gameOfLife.getActiveNeighbourCellsCount(board,1,1));
     }
 }

@@ -10,4 +10,18 @@ public class GameOfLife {
         else
             return false;
     }
+
+    public int getActiveNeighbourCellsCount(Board board, int rowIndex, int columnIndex) {
+        int activeNeighbourCellsCount = 0;
+        for (int[] direction : DIRECTIONS) {
+            int neighbourRowIndex = rowIndex + direction[0];
+            int neighbourColumnIndex = columnIndex + direction[1];
+            if (board.isValidIndex(neighbourRowIndex, neighbourColumnIndex)) {
+                if (this.isActiveCell(board, neighbourRowIndex, neighbourColumnIndex)) {
+                    activeNeighbourCellsCount += 1;
+                }
+            }
+        }
+        return activeNeighbourCellsCount;
+    }
 }
