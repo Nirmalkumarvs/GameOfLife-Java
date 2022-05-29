@@ -27,6 +27,28 @@ public class GameOfLife {
 
 
     public void playTheGame(Board board) {
+        int[][] nextGenerationBoard = new int[board.rowLength][board.columnLength];
 
+        for (int rowIndex = 0; rowIndex < board.rowLength; rowIndex++) {
+            for (int columnIndex = 0; columnIndex < board.columnLength; columnIndex++) {
+                nextGenerationBoard[rowIndex][columnIndex] = board.board[rowIndex][columnIndex];
+            }
+        }
+
+        for (int rowIndex = 0; rowIndex < board.rowLength; rowIndex++) {
+            for (int columnIndex = 0; columnIndex < board.columnLength; columnIndex++) {
+                int activeNeighbourCellsCount = this.getActiveNeighbourCellsCount(board, rowIndex, columnIndex);
+                if (this.isActiveCell(board, rowIndex, columnIndex)) {
+                    if (activeNeighbourCellsCount > 3)
+                        nextGenerationBoard[rowIndex][columnIndex] = 0;
+                }
+            }
+        }
+
+        for (int rowIndex = 0; rowIndex < board.rowLength; rowIndex++) {
+            for (int columnIndex = 0; columnIndex < board.columnLength; columnIndex++) {
+                board.board[rowIndex][columnIndex] = nextGenerationBoard[rowIndex][columnIndex];
+            }
+        }
     }
 }
