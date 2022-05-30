@@ -56,16 +56,16 @@ public class GameOfLifeTest {
         Board boardObj1 = new Board(5, 5);
         Board boardObj2 = new Board(5, 5);
 
-        boardObj1.board[0][0] = 1;
-        boardObj1.board[0][2] = 1;
         boardObj1.board[1][1] = 1;
-        boardObj1.board[2][0] = 1;
+        boardObj1.board[1][3] = 1;
         boardObj1.board[2][2] = 1;
+        boardObj1.board[3][1] = 1;
+        boardObj1.board[3][3] = 1;
 
-        boardObj2.board[0][1] = 1;
-        boardObj2.board[2][1] = 1;
-        boardObj2.board[1][0] = 1;
         boardObj2.board[1][2] = 1;
+        boardObj2.board[3][2] = 1;
+        boardObj2.board[2][1] = 1;
+        boardObj2.board[2][3] = 1;
 
         gameOfLife.playTheGame(boardObj1);
 
@@ -79,10 +79,10 @@ public class GameOfLifeTest {
         Board boardObj1 = new Board(5, 5);
         Board boardObj2 = new Board(5, 5);
 
-        boardObj1.board[0][0] = 1;
-        boardObj1.board[0][2] = 1;
-        boardObj1.board[2][0] = 1;
-        boardObj1.board[2][2] = 1;
+        boardObj1.board[1][1] = 1;
+        boardObj1.board[1][3] = 1;
+        boardObj1.board[3][1] = 1;
+        boardObj1.board[3][3] = 1;
 
         gameOfLife.playTheGame(boardObj1);
 
@@ -96,11 +96,11 @@ public class GameOfLifeTest {
         Board boardObj1 = new Board(5, 5);
         Board boardObj2 = new Board(5, 5);
 
-        boardObj1.board[0][0] = 1;
-        boardObj1.board[0][2] = 1;
-        boardObj1.board[2][0] = 1;
+        boardObj1.board[1][1] = 1;
+        boardObj1.board[1][3] = 1;
+        boardObj1.board[3][1] = 1;
 
-        boardObj2.board[1][1] = 1;
+        boardObj2.board[2][2] = 1;
 
         gameOfLife.playTheGame(boardObj1);
 
@@ -148,16 +148,16 @@ public class GameOfLifeTest {
     @Test
     public void testGameOfLifeOperationWithOscillatoryBlinkerPattern() {
         GameOfLife gameOfLife = new GameOfLife();
-        Board boardObj1 = new Board(5, 5);
-        Board boardObj2 = new Board(5, 5);
+        Board boardObj1 = new Board(6, 6);
+        Board boardObj2 = new Board(6, 6);
 
-        boardObj1.board[1][1] = 1;
-        boardObj1.board[1][2] = 1;
-        boardObj1.board[1][3] = 1;
+        boardObj1.board[2][2] = 1;
+        boardObj1.board[2][3] = 1;
+        boardObj1.board[2][4] = 1;
 
-        boardObj2.board[1][2] = 1;
-        boardObj2.board[0][2] = 1;
-        boardObj2.board[2][2] = 1;
+        boardObj2.board[2][3] = 1;
+        boardObj2.board[1][3] = 1;
+        boardObj2.board[3][3] = 1;
 
         for (int iteration = 0; iteration < 9; iteration++) {
             gameOfLife.playTheGame(boardObj1);

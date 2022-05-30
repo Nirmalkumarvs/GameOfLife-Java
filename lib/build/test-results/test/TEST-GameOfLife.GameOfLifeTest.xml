@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="GameOfLife.GameOfLifeTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2022-05-29T10:55:51" hostname="LENOVO" time="0.077">
+<testsuite name="GameOfLife.GameOfLifeTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2022-05-30T01:51:19" hostname="LENOVO" time="0.099">
   <properties/>
-  <testcase name="testPlayTheGameMethodExists()" classname="GameOfLife.GameOfLifeTest" time="0.003"/>
-  <testcase name="testDeadCellWithThreeActiveNeighborsBecamesActiveCellCondition()" classname="GameOfLife.GameOfLifeTest" time="0.006"/>
-  <testcase name="testGameOfLifeOperationWithOscillatoryBlinkerPattern()" classname="GameOfLife.GameOfLifeTest" time="0.003"/>
-  <testcase name="testActiveCellWithFourOrMoreActiveNeighborsDiesCondition()" classname="GameOfLife.GameOfLifeTest" time="0.001"/>
-  <testcase name="testIsActiveCellMethodWorksWellForIndexWithoutActiveCell()" classname="GameOfLife.GameOfLifeTest" time="0.001"/>
-  <testcase name="testMakeItAsDeadCellMethodWorks()" classname="GameOfLife.GameOfLifeTest" time="0.004"/>
-  <testcase name="testGetActiveNeighbourCellsCountMethodWorksWell()" classname="GameOfLife.GameOfLifeTest" time="0.003"/>
-  <testcase name="testActiveCellWithLessThanTwoActiveNeighborsDiesCondition()" classname="GameOfLife.GameOfLifeTest" time="0.005"/>
-  <testcase name="testGameOfLifeOperationWithStillLivesBlockPattern()" classname="GameOfLife.GameOfLifeTest" time="0.004"/>
-  <testcase name="testGameOfLifeClassCanBeInitialized()" classname="GameOfLife.GameOfLifeTest" time="0.002"/>
-  <testcase name="testIsActiveCellMethodWorksWellForIndexWithActiveCell()" classname="GameOfLife.GameOfLifeTest" time="0.003"/>
+  <testcase name="testPlayTheGameMethodExists()" classname="GameOfLife.GameOfLifeTest" time="0.004"/>
+  <testcase name="testDeadCellWithThreeActiveNeighborsBecamesActiveCellCondition()" classname="GameOfLife.GameOfLifeTest" time="0.022"/>
+  <testcase name="testGameOfLifeOperationWithOscillatoryBlinkerPattern()" classname="GameOfLife.GameOfLifeTest" time="0.005"/>
+  <testcase name="testActiveCellWithFourOrMoreActiveNeighborsDiesCondition()" classname="GameOfLife.GameOfLifeTest" time="0.003"/>
+  <testcase name="testIsActiveCellMethodWorksWellForIndexWithoutActiveCell()" classname="GameOfLife.GameOfLifeTest" time="0.008"/>
+  <testcase name="testMakeItAsDeadCellMethodWorks()" classname="GameOfLife.GameOfLifeTest" time="0.006"/>
+  <testcase name="testGetActiveNeighbourCellsCountMethodWorksWell()" classname="GameOfLife.GameOfLifeTest" time="0.002"/>
+  <testcase name="testActiveCellWithLessThanTwoActiveNeighborsDiesCondition()" classname="GameOfLife.GameOfLifeTest" time="0.003"/>
+  <testcase name="testGameOfLifeOperationWithStillLivesBlockPattern()" classname="GameOfLife.GameOfLifeTest" time="0.002"/>
+  <testcase name="testGameOfLifeClassCanBeInitialized()" classname="GameOfLife.GameOfLifeTest" time="0.003"/>
+  <testcase name="testIsActiveCellMethodWorksWellForIndexWithActiveCell()" classname="GameOfLife.GameOfLifeTest" time="0.002"/>
   <testcase name="testDirectionsAttributeIsAvailable()" classname="GameOfLife.GameOfLifeTest" time="0.002"/>
-  <testcase name="testMakeItAsActiveCellMethodWorks()" classname="GameOfLife.GameOfLifeTest" time="0.002"/>
+  <testcase name="testMakeItAsActiveCellMethodWorks()" classname="GameOfLife.GameOfLifeTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
